@@ -1,0 +1,26 @@
+[package]
+name = "spAnalyse"
+version = "0.1.0"
+authors = ["ashthespy <ashthespy@gmail.com>"]
+# build = "build.rs"
+
+[[bin]]
+name = "spanalyse"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+tokio-core = "0.1.2"
+serde_json = "0.9.6"
+protobuf = "1.1"
+futures = "0.1.8"
+
+
+[dependencies.librespot]
+# git = "https://github.com/ashthespy/librespot"
+# path = "./librespot"
+# git = "file:///mnt/e/SyncD/KeepingBusySync/VolSpotConnect_meta/librespot"
+path = "../librespot"
+# branch="vollibrespot"
+default-features = false
+# features = ["alsa-backend"]
